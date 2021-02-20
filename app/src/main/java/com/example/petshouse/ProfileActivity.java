@@ -7,30 +7,20 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity{
+public class ProfileActivity extends AppCompatActivity {
 
-    private Button changeFrame;
     private Toolbar menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
 
-        changeFrame = findViewById(R.id.btn_login);
         menu = findViewById(R.id.menu);
-        menu.setTitle("Home");
+        menu.setTitle("Perfil");
         setSupportActionBar(menu);
-
-        changeFrame.setOnClickListener(v -> {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-        });
-
     }
 
     @Override
@@ -43,7 +33,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.profile:
                 Intent intent1 = new Intent(this, ProfileActivity.class);
                 startActivity(intent1);
@@ -64,6 +54,5 @@ public class MainActivity extends AppCompatActivity{
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
 }

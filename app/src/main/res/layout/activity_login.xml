@@ -14,7 +14,6 @@
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_gravity="center"
-        android:background="#B2D8FF"
         android:src="@drawable/logo" />
 
     <TextView
@@ -72,7 +71,7 @@
             android:background="#00000000"
             android:elevation="0dp"
             android:text="Esqueceu sua senha?"
-            android:textColor="@color/black"
+            android:textColor="#99000000"
             android:textSize="11dp" />
 
         <Button
@@ -88,7 +87,7 @@
             android:background="#00000000"
             android:elevation="0dp"
             android:text="Novo usuario?"
-            android:textColor="@color/black"
+            android:textColor="#99000000"
             android:textSize="11dp" />
 
     </LinearLayout>

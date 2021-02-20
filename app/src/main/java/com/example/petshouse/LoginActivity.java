@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.petshouse.model.UserModel;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -15,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
     TextInputLayout username;
     TextInputLayout password;
+    UserModel userModel;
 
     Button forget;
     Button signIn;
@@ -37,8 +39,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                username.getEditText().setText("");
 //                password.getEditText().setText("");
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+
+                userModel = new UserModel(1);
+
+                if(userModel.getUserType() == 1){
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
