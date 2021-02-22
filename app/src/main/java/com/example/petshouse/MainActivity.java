@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity{
 
         switch (item.getItemId()){
             case R.id.profile:
-                Intent intent1 = new Intent(this, ProfileActivity.class);
-                startActivity(intent1);
-
+//                Intent intent1 = new Intent(this, ProfileActivity.class);
+//                startActivity(intent1);
+                setContentView(R.layout.activity_profile);
                 return true;
 //            case R.id.notification:
 //                Intent intent2 = new Intent(this, NotificationActivity.class);

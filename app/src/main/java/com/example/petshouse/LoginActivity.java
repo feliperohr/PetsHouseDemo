@@ -27,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        setActionBar(null);
+
         username = findViewById(R.id.txt_username);
         password = findViewById(R.id.txt_password);
 
@@ -51,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         signUp.setOnClickListener(v -> {
+            setContentView(R.layout.activity_register1);
 
         });
 

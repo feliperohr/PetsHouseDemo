@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PetsHouse</string>
     <string name="home">Home</string>
+    <string name="title_activity_register1">RegisterActivity1</string>
+    <!-- Strings used for fragments for navigation -->
+
 </resources>
