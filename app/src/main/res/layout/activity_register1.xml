@@ -33,10 +33,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273"
-        android:clickable="true"
-        android:focusable="true"
-        android:checkable="true">
+        app:layout_constraintVertical_bias="0.273">
 
         <LinearLayout
             android:id="@+id/card_petOwner"
@@ -62,8 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:text="Cliente"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
@@ -90,10 +86,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764"
-        android:clickable="true"
-        android:focusable="true"
-        android:checkable="true">
+        app:layout_constraintVertical_bias="0.764">
 
         <LinearLayout
             android:id="@+id/card_petSitter"
@@ -125,29 +118,21 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+
+    <Button
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continuar"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

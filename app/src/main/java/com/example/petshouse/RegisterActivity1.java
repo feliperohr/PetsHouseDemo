@@ -2,19 +2,17 @@ package com.example.petshouse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 
-
-import com.google.android.material.card.MaterialCardView;
 
 public class RegisterActivity1 extends AppCompatActivity {
 
     private CheckBox cbPetOwner;
     private CheckBox cbPetSitter;
-    private MaterialCardView cv1;
-    private MaterialCardView cv2;
+    private Button btnNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +22,16 @@ public class RegisterActivity1 extends AppCompatActivity {
         cbPetOwner = findViewById(R.id.cb_petOwner);
         cbPetSitter = findViewById(R.id.cb_petSitter);
 
+        btnNext = findViewById(R.id.btn_next);
 
-        cbPetOwner.setChecked(true);
-
-//        cv1 = findViewById(R.id.cardView1);
-//        cv2 = findViewById(R.id.cardView2);
-
-
+        btnNext.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RegisterActivity2.class);
+            startActivity(intent);
+//            setContentView(R.layout.activity_register2);
+        });
 
     }
+
+
 
 }
