@@ -7,7 +7,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
 
@@ -45,9 +44,8 @@ public class MainActivity extends AppCompatActivity{
 
         switch (item.getItemId()){
             case R.id.profile:
-//                Intent intent1 = new Intent(this, ProfileActivity.class);
-//                startActivity(intent1);
-                setContentView(R.layout.activity_profile);
+                Intent intent1 = new Intent(this, ProfileActivity.class);
+                startActivity(intent1);
                 return true;
 //            case R.id.notification:
 //                Intent intent2 = new Intent(this, NotificationActivity.class);

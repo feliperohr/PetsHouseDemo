@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#B2D8FF"
     android:orientation="vertical"
-    tools:context=".RegisterActivity1">
+    android:visibility="visible"
+    tools:context=".SignUpOneActivity">
 
     <TextView
         android:id="@+id/tv_description"
@@ -33,14 +34,19 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273">
+        app:layout_constraintVertical_bias="0.273"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        android:onClick="checkAndUncheckCb1">
 
         <LinearLayout
             android:id="@+id/card_petOwner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#B2D8FF"
-            android:elevation="8dp"
+            android:elevation="15px"
+            android:fadingEdge="horizontal|vertical"
             android:orientation="vertical"
             android:padding="15dp">
 
@@ -59,7 +65,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:text="Cliente"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -86,16 +92,21 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764">
+        app:layout_constraintVertical_bias="0.764"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        android:onClick="checkAndUncheckCb2">
 
         <LinearLayout
             android:id="@+id/card_petSitter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#B2D8FF"
-            android:elevation="8dp"
+            android:elevation="15px"
+            android:fadingEdge="horizontal|vertical"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <TextView
                 android:id="@+id/textView3"
@@ -118,21 +129,35 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
     <Button
         android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"
+        android:onClick="setCustomerType"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"/>
-
-
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

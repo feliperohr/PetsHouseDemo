@@ -6,10 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.petshouse.model.UserModel;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
@@ -42,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 //                username.getEditText().setText("");
 //                password.getEditText().setText("");
 
-                userModel = new UserModel(1);
+//                userModel = new UserModel(1);
 
                 if(userModel.getUserType() == 1){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -53,7 +51,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         signUp.setOnClickListener(v -> {
-            setContentView(R.layout.activity_register1);
+            Intent intent = new Intent(this, SignUpOneActivity.class);
+            startActivity(intent);
 
         });
 
