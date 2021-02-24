@@ -7,7 +7,7 @@
     android:background="#B2D8FF"
     android:orientation="vertical"
     android:visibility="visible"
-    tools:context=".SignUpOneActivity">
+    tools:context=".SignUpActivity1">
 
     <TextView
         android:id="@+id/tv_description"
@@ -38,7 +38,8 @@
         android:clickable="true"
         android:focusable="true"
         android:checkable="true"
-        android:onClick="checkAndUncheckCb1">
+        android:onClick="checkAndUncheckCb1"
+        android:backgroundTint="@color/purple_500" >
 
         <LinearLayout
             android:id="@+id/card_petOwner"
@@ -81,7 +82,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.515"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView2"
@@ -96,7 +100,8 @@
         android:clickable="true"
         android:focusable="true"
         android:checkable="true"
-        android:onClick="checkAndUncheckCb2">
+        android:onClick="checkAndUncheckCb2"
+        android:backgroundTint="@color/purple_500" >
 
         <LinearLayout
             android:id="@+id/card_petSitter"
@@ -145,17 +150,14 @@
 
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_registration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:elevation="10dp"
         android:onClick="setCustomerType"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />

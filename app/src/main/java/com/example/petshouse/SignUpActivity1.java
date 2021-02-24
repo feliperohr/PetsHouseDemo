@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 
-public class SignUpOneActivity extends AppCompatActivity {
+public class SignUpActivity1 extends AppCompatActivity {
 
     private CheckBox petOwner;
     private CheckBox petSitter;
@@ -15,7 +15,7 @@ public class SignUpOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up_one);
+        setContentView(R.layout.activity_sign_up1);
 
         petOwner = findViewById(R.id.cb_petOwner);
         petSitter = findViewById(R.id.cb_petSitter);
@@ -25,7 +25,7 @@ public class SignUpOneActivity extends AppCompatActivity {
 
     public void setCustomerType(View view){
 
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(this, SignUpActivity2.class);
 
         if(petOwner.isChecked()){
             //UserModel.setUserType(1)
