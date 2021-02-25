@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 //                userModel = new UserModel(1);
 
 //                if(userModel.getUserType() == 1){
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, TaskListActivity.class);
                     startActivity(intent);
 //                }
 

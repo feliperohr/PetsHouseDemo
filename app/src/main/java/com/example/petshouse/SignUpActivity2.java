@@ -14,13 +14,13 @@ public class SignUpActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up2);
 
-//        this.updateView();
+        this.updateView();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-//        this.updateView();
+        this.updateView();
 
     }
 

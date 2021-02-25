@@ -4,4 +4,31 @@
     <string name="title_activity_register1">RegisterActivity1</string>
     <!-- Strings used for fragments for navigation -->
 
+    <string-array name="name">
+        <item>Jose</item>
+        <item>Carla</item>
+        <item>Ana</item>
+        <item>Lucas</item>
+        <item>Rafaela</item>
+        <item>Gabi</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>21/04 até 24/04</item>
+        <item>21/04 até 24/04</item>
+        <item>21/04 até 24/04</item>
+        <item>21/04 até 24/04</item>
+        <item>21/04 até 24/04</item>
+        <item>21/04 até 24/04</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>Preciso de um cuidador que faça...</item>
+        <item>Preciso de um cuidador que faça...</item>
+        <item>Preciso de um cuidador que faça...</item>
+        <item>Preciso de um cuidador que faça...</item>
+        <item>Preciso de um cuidador que faça...</item>
+        <item>Preciso de um cuidador que faça...</item>
+    </string-array>
+
 </resources>

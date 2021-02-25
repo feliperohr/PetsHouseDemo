@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetsHouse">
-        <activity android:name=".SignUpActivity2"></activity>
+        <activity android:name=".TaskActivity"/>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".TaskListActivity" />
+        <activity android:name=".SignUpActivity2" />
         <activity android:name=".SignUpActivity1" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity">
@@ -19,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
