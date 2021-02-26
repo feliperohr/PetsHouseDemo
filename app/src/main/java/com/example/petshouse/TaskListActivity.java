@@ -10,8 +10,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 
 import com.example.petshouse.adapter.TaskAdapter;
+import com.google.android.material.textfield.TextInputLayout;
 
 public class TaskListActivity extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class TaskListActivity extends AppCompatActivity {
             R.drawable.i4, R.drawable.i3};
 
     private Toolbar menu;
+    private TextInputLayout txtItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,9 @@ public class TaskListActivity extends AppCompatActivity {
         rv.setAdapter(taskAdapter);
         rv.setLayoutManager(new LinearLayoutManager(this));
 
+        txtItems = findViewById(R.id.txt_task_filter);
+
+        String items[] = {"Material", "Design", "Components", "Android"};
 
     }
 

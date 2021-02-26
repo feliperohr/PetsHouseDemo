@@ -39,15 +39,26 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:layout_constraintVertical_bias="0.0">
 
-        <Spinner
-            android:id="@+id/spinner"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_task_filter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:tooltipText="@string/app_name" />
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginRight="10dp"
+            android:hint="Tipo do animal">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_filter_task_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
