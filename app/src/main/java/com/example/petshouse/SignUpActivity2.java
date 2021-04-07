@@ -34,7 +34,7 @@ public class SignUpActivity2 extends AppCompatActivity {
     }
 
     public void previousLayout(View view) {
-        Intent intent = new Intent(this, SignUpActivity1.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }

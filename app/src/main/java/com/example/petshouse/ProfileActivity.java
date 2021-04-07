@@ -8,10 +8,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
 
     private Toolbar menu;
+
+    private TextView name;
+    private TextView phone;
+    private TextView cpf;
+    private TextView animalType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +27,11 @@ public class ProfileActivity extends AppCompatActivity {
         menu = findViewById(R.id.menu);
         menu.setTitle("Nome_do_usuario");
         setSupportActionBar(menu);
+
+        name = findViewById(R.id.profileName);
+        phone = findViewById(R.id.profilePhone);
+        cpf = findViewById(R.id.profileCpf);
+        animalType = findViewById(R.id.profileTipoAnimal);
     }
 
     @Override

@@ -39,17 +39,17 @@ public class SignUpActivity1 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void checkAndUncheckCb1(View v){
-        if(petSitter.isChecked()){
-            petSitter.setChecked(!petSitter.isChecked());
-        }
-        petOwner.setChecked(!petOwner.isChecked());
-    }
-
-    public void checkAndUncheckCb2(View v){
-        if(petOwner.isChecked()){
-            petOwner.setChecked(!petOwner.isChecked());
-        }
-        petSitter.setChecked(!petSitter.isChecked());
-    }
+//    public void checkAndUncheckCb1(View v){
+//        if(petSitter.isChecked()){
+//            petSitter.setChecked(!petSitter.isChecked());
+//        }
+//        petOwner.setChecked(!petOwner.isChecked());
+//    }
+//
+//    public void checkAndUncheckCb2(View v){
+//        if(petOwner.isChecked()){
+//            petOwner.setChecked(!petOwner.isChecked());
+//        }
+//        petSitter.setChecked(!petSitter.isChecked());
+//    }
 }

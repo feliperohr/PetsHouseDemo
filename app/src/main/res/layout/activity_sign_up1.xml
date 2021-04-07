@@ -25,114 +25,114 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView1"
-        android:layout_width="312dp"
-        android:layout_height="171dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273"
-        android:clickable="true"
-        android:focusable="true"
-        android:checkable="true"
-        android:onClick="checkAndUncheckCb1"
-        android:backgroundTint="@color/purple_500" >
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cardView1"-->
+<!--        android:layout_width="312dp"-->
+<!--        android:layout_height="171dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.273"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:checkable="true"-->
+<!--        android:onClick="checkAndUncheckCb1"-->
+<!--        android:backgroundTint="@color/purple_500" >-->
 
-        <LinearLayout
-            android:id="@+id/card_petOwner"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#B2D8FF"
-            android:elevation="15px"
-            android:fadingEdge="horizontal|vertical"
-            android:orientation="vertical"
-            android:padding="15dp">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/card_petOwner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#B2D8FF"-->
+<!--            android:elevation="15px"-->
+<!--            android:fadingEdge="horizontal|vertical"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="15dp">-->
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
-                android:text="  Sou uma pessoa que possui um animal de estimação e em certas ocasiões necessito de ajuda para cuidar deles, eu sou um(a):"
-                android:textAlignment="viewStart" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/roboto"-->
+<!--                android:text="  Sou uma pessoa que possui um animal de estimação e em certas ocasiões necessito de ajuda para cuidar deles, eu sou um(a):"-->
+<!--                android:textAlignment="viewStart" />-->
 
-            <CheckBox
-                android:id="@+id/cb_petOwner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="Cliente"
-                android:textSize="16sp" />
+<!--            <CheckBox-->
+<!--                android:id="@+id/cb_petOwner"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:text="Cliente"-->
+<!--                android:textSize="16sp" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515"
-        android:backgroundTint="@color/purple_500"
-        android:layout_marginRight="6dp"
-        android:layout_marginLeft="6dp"/>
+<!--    <View-->
+<!--        android:id="@+id/divider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.515"-->
+<!--        android:backgroundTint="@color/purple_500"-->
+<!--        android:layout_marginRight="6dp"-->
+<!--        android:layout_marginLeft="6dp"/>-->
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView2"
-        android:layout_width="312dp"
-        android:layout_height="171dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764"
-        android:clickable="true"
-        android:focusable="true"
-        android:checkable="true"
-        android:onClick="checkAndUncheckCb2"
-        android:backgroundTint="@color/purple_500" >
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cardView2"-->
+<!--        android:layout_width="312dp"-->
+<!--        android:layout_height="171dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.764"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:checkable="true"-->
+<!--        android:onClick="checkAndUncheckCb2"-->
+<!--        android:backgroundTint="@color/purple_500" >-->
 
-        <LinearLayout
-            android:id="@+id/card_petSitter"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#B2D8FF"
-            android:elevation="15px"
-            android:fadingEdge="horizontal|vertical"
-            android:orientation="vertical"
-            android:padding="15dp">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/card_petSitter"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#B2D8FF"-->
+<!--            android:elevation="15px"-->
+<!--            android:fadingEdge="horizontal|vertical"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="15dp">-->
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto"
-                android:text="  Sou uma pessoa que gosta muito de cuidar de animais e gostaria de encontrar serviços para passar mais tempo com eles, eu sou um(a):"
-                android:textAlignment="viewStart" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/roboto"-->
+<!--                android:text="  Sou uma pessoa que gosta muito de cuidar de animais e gostaria de encontrar serviços para passar mais tempo com eles, eu sou um(a):"-->
+<!--                android:textAlignment="viewStart" />-->
 
-            <CheckBox
-                android:id="@+id/cb_petSitter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="Cuidador"
-                android:textSize="16sp" />
+<!--            <CheckBox-->
+<!--                android:id="@+id/cb_petSitter"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:text="Cuidador"-->
+<!--                android:textSize="16sp" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
 
     <Button
