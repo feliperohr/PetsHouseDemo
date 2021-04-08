@@ -1,6 +1,5 @@
 package com.example.petshouse.retrofit;
 
-
 import com.example.petshouse.model.dto.ProfileDTO;
 
 import retrofit2.Call;
@@ -12,7 +11,7 @@ import retrofit2.http.Path;
 public interface ProfileService {
 
     @POST("profile")
-    Call<ProfileDTO> register(@Body ProfileDTO person);
+    Call<Void> register(@Body ProfileDTO profile);
 
     @GET("profile/{id}")
     Call<ProfileDTO> getById(@Path("id") long id);

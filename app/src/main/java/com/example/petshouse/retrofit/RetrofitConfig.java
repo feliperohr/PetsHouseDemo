@@ -22,11 +22,11 @@ public class RetrofitConfig {
         return retrofit.create(PetSitterService.class);
     }
 
-    public ProfileService setProfileService() {
+    public ProfileService getProfileService() {
         return retrofit.create(ProfileService.class);
     }
 
-    public TaskService setTaskService() {
+    public TaskService getTaskService() {
         return retrofit.create(TaskService.class);
     }
 

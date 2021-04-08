@@ -31,4 +31,10 @@
         <item>Preciso de um cuidador que faça...</item>
     </string-array>
 
+    <string-array name="filters">
+        <item>Cães e Gatos</item>
+        <item>Apenas gatos</item>
+        <item>Apenas cães</item>
+    </string-array>
+
 </resources>

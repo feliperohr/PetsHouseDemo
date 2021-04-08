@@ -5,9 +5,6 @@
         android:title="Perfil"
         android:id="@+id/profile"/>
     <item
-        android:title="Notificações"
-        android:id="@+id/notification"/>
-    <item
         android:id="@+id/task"
         android:title="Serviços" />
     <item

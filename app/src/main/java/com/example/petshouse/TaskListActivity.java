@@ -7,13 +7,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 import com.example.petshouse.adapter.TaskAdapter;
+import com.example.petshouse.model.dto.CustomerDTO;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.gson.Gson;
 
 public class TaskListActivity extends AppCompatActivity {
 
@@ -25,15 +29,23 @@ public class TaskListActivity extends AppCompatActivity {
 
     private Toolbar menu;
     private TextInputLayout txtItems;
+    private AutoCompleteTextView autoCompleteTextView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_list);
 
+        CustomerDTO customer = getCustomerData();
+
         menu = findViewById(R.id.menu);
-        menu.setTitle("Nome_do_usuario");
+//        menu.setTitle(customer.getProfile().getName());
+
         setSupportActionBar(menu);
+
+
 
         names = getResources().getStringArray(R.array.name);
         dates = getResources().getStringArray(R.array.date);
@@ -45,16 +57,30 @@ public class TaskListActivity extends AppCompatActivity {
         rv.setAdapter(taskAdapter);
         rv.setLayoutManager(new LinearLayoutManager(this));
 
-        txtItems = findViewById(R.id.txt_task_filter);
+        txtItems = findViewById(R.id.txt_task_filter1);
+        autoCompleteTextView = findViewById(R.id.autoCompleteFilter1);
 
-        String items[] = {"Material", "Design", "Components", "Android"};
 
+
+        String filters[] = getResources().getStringArray(R.array.filters);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.dropdown_item, filters);
+        autoCompleteTextView.setAdapter(arrayAdapter);
+
+
+    }
+
+    private CustomerDTO getCustomerData(){
+        SharedPreferences sharedPreferences = getSharedPreferences("customerData", MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString("CustomerDTO", "");
+        CustomerDTO customer = gson.fromJson(json, CustomerDTO.class);
+        return customer;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.menu_bar, menu);
+        getMenuInflater().inflate(R.menu.menu_bar_pet_sitter, menu);
         return true;
     }
 

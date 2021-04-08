@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 public interface TaskService {
 
     @POST("task")
-    Call<TaskDTO> register(@Body ProfileDTO person);
+    Call<Void> register(@Body TaskDTO taskDTO);
 
     @GET("task")
     Call<TaskDTO> getAll();
@@ -20,7 +20,7 @@ public interface TaskService {
     @GET("task/{id}")
     Call<TaskDTO> getById(@Path("id") long id);
 
-    @GET("profile/filter/{filter}")
+    @GET("task/filter/{filter}")
     Call<TaskDTO> getByFilter(@Path("filter") String filter);
 
 }

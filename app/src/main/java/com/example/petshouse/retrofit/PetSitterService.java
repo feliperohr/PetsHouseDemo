@@ -18,4 +18,7 @@ public interface PetSitterService {
 
     @GET("customer/petSitter/{id}")
     Call<CustomerDTO> getById(@Path("id") long id);
+
+    @GET("customer/petSitter/username/{username}")
+    Call<CustomerDTO> getByUsername(@Path("username") String username);
 }

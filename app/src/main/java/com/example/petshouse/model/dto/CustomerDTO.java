@@ -1,33 +1,37 @@
 package com.example.petshouse.model.dto;
 
-public class CustomerDTO {
 
-    private  Long id;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class CustomerDTO{
+
+    private  long id;
+
     private  String login;
-    private  String password;
-    private String name;
-    private String cpf;
-    private String phone;
-    private String animalType;
 
+    private  String password;
+
+    private ProfileDTO profile;
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(String login, String password, String name, String cpf, String phone, String animalType) {
+    public CustomerDTO(long id) {
+        this.id = id;
+    }
+
+    public CustomerDTO(String login, String password, ProfileDTO profile) {
         this.login = login;
         this.password = password;
-        this.name = name;
-        this.cpf = cpf;
-        this.phone = phone;
-        this.animalType = animalType;
+        this.profile = profile;
     }
 
     public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -47,36 +51,12 @@ public class CustomerDTO {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public ProfileDTO getProfile() {
+        return profile;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAnimalType() {
-        return animalType;
-    }
-
-    public void setAnimalType(String animalType) {
-        this.animalType = animalType;
+    public void setProfile(ProfileDTO profile) {
+        this.profile = profile;
     }
 
     @Override
@@ -85,10 +65,8 @@ public class CustomerDTO {
                 "id=" + id +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", phone='" + phone + '\'' +
-                ", animalType='" + animalType + '\'' +
+                ", profile=" + profile +
                 '}';
     }
+
 }
